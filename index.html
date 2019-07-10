@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -8,4 +8,265 @@
   <h1>Hola amiguitos!</h1>
   <footer>gpuma 2017</footer>
 </body>
-</html>
+</html> -->
+
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Oscar's Summer Discovery Experience</title>
+            <style>
+                @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+                body {
+                    height: 2000px;
+                    margin:0;
+                    background-color: #5B7899;
+                }
+
+                .navbar {
+                    overflow: hidden;
+                    background-color: #333333;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    z-index: 1;
+                }
+                .navbar a {
+                    float: left;
+                    display: block;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                }
+
+                .navbar a:hover {
+                    background: #ddd;
+                    color: black;
+                }
+
+                .about {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 547px;
+                    width: 100%;
+                    position: absolute;
+                    height: 500px; 
+                    z-index: -1;
+                }
+                #hedrick {
+                    position: absolute;
+                    top: 47px;
+                    width: 100%;
+                    height: 500px;
+                    opacity: 0;
+                    transition: opacity 1s;
+                }
+                .experience {
+                    top: 225px;
+                    right: 500px;
+                    position: absolute;
+                    width: 30%;
+                    height: 10%;
+                }
+                .link {
+                    top: 280px;
+                    right: 500px;
+                    position: absolute;
+                    width: 30%;
+                    height: 10%;
+                    background-color: black;
+                }
+                p {
+                    background-color: #333333;
+                    color: white;
+                    font-size: 30px;
+                    font-family: 'Russo One', sans-serif;
+                }
+                #hedrick:hover {
+                    opacity: 1;
+                }
+                .info {
+                    display: flex;
+                    flex-direction: row;
+                    width: 90%;
+                    height: 90%;
+                    background-color: white;
+                    z-index: -1;
+                }
+                .image {
+                    height: 100%;
+                    width: 30%;
+                    background-color: white;
+                    z-index: -1;
+                }
+                .text {
+                    height: 100%;
+                    width: 70%;
+                    background-color: #9FBAE8;
+                    z-index: -1;
+                }
+                #pikachu {
+                    position: absolute;
+                    top: 25px;
+                    width: 389px;
+                    height: 450px;
+                }
+                .introcontainer {
+                top: 0;
+                position: absolute;
+                width: 100%;
+                height: 2000px;;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                }
+                .introbox {
+                top: 0%;
+                bottom: 0%;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 50%;
+                background-color: #37353A;
+                z-index: 2;
+                }
+                .introbox2 {
+                top: 50%;
+                bottom: 0%;  
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;  
+                width: 100%;
+                height: 50%;
+                background-color: #37353A;
+                z-index: 2;
+                }
+                p4 {
+                color: white;
+                font-family: 'Gugi', cursive;
+                font-size: 100px;
+                animation: color1 4s infinite ;
+                }
+                p5 {
+                color: white;
+                font-family: 'Gugi', cursive;
+                font-size: 40px;
+                }
+                .blog {
+                    position: absolute;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    top: 1000px;
+                    display: flex;
+                    width: 100%;
+                    height: 800px;
+                    background-color: #5B7899;
+                }
+                .post {
+                    width: 95%;
+                    height: 25%;
+                    background-color: crimson;
+                }
+                h1 {
+                    color: white;
+                }
+                .content {
+                    
+                    width: 100%;
+                    height: 160px;
+                    background-color: crimson;
+                }
+                h3 {
+                    margin-top: 0%;
+                }
+                .date {
+                    float: right;
+                    font-style: italic;
+                }
+                a:link, a:visited {
+                    text-decoration: none;
+                    color: white;
+                }
+            </style>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+              <script>
+               $(document) .ready(function(){
+                  $(".introcontainer").click(function(){
+                      $(".introcontainer").animate({top: "-2000px"});
+                  });
+              });
+              $(document) .ready(function(){
+                  $(".experience").mouseenter(function(){
+                      $(".link");
+                  });
+              });
+              </script>
+        </head>
+        <body>
+            <div class="introcontainer">
+                <div class="introbox"><p4>Welcome To My Profile</p4>
+                <br>
+                <p5>Click here to Continue</p5>
+                </div>
+                <div class="introbox2"><p4>Welcome To My Profile</p4>
+                    <br>
+                    <p5>Click here to Continue</p5>
+                </div></div>
+            </div>
+            <div id="top" class="navbar">
+                <a href="#top">Home</a>
+                <a href="#info">About</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <img id="hedrick" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Los_Angeles%2C_Winter_2016.jpg">
+            <div id="home" class="experience"><p>My <a id="summer" href="https://www.summerdiscovery.com/">Summer Discovery</a> in LA</p></div>
+            <div id="info" class="about">
+                <div class="info">
+                    <div class="image"></div>
+                    <div class="text"></div>
+                    <img id="pikachu" src="https://i.kym-cdn.com/photos/images/original/001/431/201/40f.png">
+                </div>
+            </div>
+            <div class="blog"><h1>My Blog</h1>
+                <div class="post">
+                    <h3>
+                        Blog Post #1
+                        <span class="date">July 10th, 2019</span>
+                    </h3>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, dolor quis interdum semper, nunc justo ultrices enim, ac auctor tellus libero et ligula. Nam placerat neque semper dolor sagittis hendrerit. Nulla imperdiet, augue nec venenatis vulputate, diam leo accumsan tortor, eget imperdiet ante odio eu elit. Ut euismod diam vel lacus accumsan, eu accumsan dolor molestie. Suspendisse in orci vel mi facilisis congue. Ut pulvinar commodo libero, et porttitor orci scelerisque vitae. In finibus aliquam risus at rutrum.
+                    </div>
+                </div>
+                <div class="post">
+                    <h3>
+                        Blog Post #2
+                        <span class="date">July 10th, 2019</span>
+                    </h3>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, dolor quis interdum semper, nunc justo ultrices enim, ac auctor tellus libero et ligula. Nam placerat neque semper dolor sagittis hendrerit. Nulla imperdiet, augue nec venenatis vulputate, diam leo accumsan tortor, eget imperdiet ante odio eu elit. Ut euismod diam vel lacus accumsan, eu accumsan dolor molestie. Suspendisse in orci vel mi facilisis congue. Ut pulvinar commodo libero, et porttitor orci scelerisque vitae. In finibus aliquam risus at rutrum.
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <h3>
+                        Blog Post #3
+                        <span class="date">July 10th, 2019</span>
+                    </h3>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, dolor quis interdum semper, nunc justo ultrices enim, ac auctor tellus libero et ligula. Nam placerat neque semper dolor sagittis hendrerit. Nulla imperdiet, augue nec venenatis vulputate, diam leo accumsan tortor, eget imperdiet ante odio eu elit. Ut euismod diam vel lacus accumsan, eu accumsan dolor molestie. Suspendisse in orci vel mi facilisis congue. Ut pulvinar commodo libero, et porttitor orci scelerisque vitae. In finibus aliquam risus at rutrum.
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
