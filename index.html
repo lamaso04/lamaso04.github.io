@@ -1,22 +1,13 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Página de prueba</title>
-</head>
-<body>
-  <h1>Hola amiguitos!</h1>
-  <footer>gpuma 2017</footer>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
     <html>
         <head>
             <title>Oscar's Summer Discovery Experience</title>
             <style>
                 @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+                @import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
+                html {
+                    scroll-behavior: smooth;
+                }
                 body {
                     height: 2000px;
                     margin:0;
@@ -69,7 +60,7 @@
                     right: 500px;
                     position: absolute;
                     width: 30%;
-                    height: 10%;
+                    height: 10px;
                 }
                 .link {
                     top: 280px;
@@ -84,6 +75,11 @@
                     color: white;
                     font-size: 30px;
                     font-family: 'Russo One', sans-serif;
+                }
+                p2 {
+                    font-family: 'Literata', serif;
+                    color: black;
+                    font-size: 15px;
                 }
                 #hedrick:hover {
                     opacity: 1;
@@ -173,12 +169,17 @@
                     background-color: #5B7899;
                 }
                 .post {
-                    width: 95%;
+                    width: 70%;
                     height: 25%;
                     background-color: crimson;
                 }
+                .postback {
+                    width: 95%;
+                    height: 25%;
+                }
                 h1 {
                     color: white;
+                    text-align: center;
                 }
                 .content {
                     
@@ -197,17 +198,32 @@
                     text-decoration: none;
                     color: white;
                 }
+                #myVideo {
+                    position: absolute;
+                    right: 60px;
+                    max-width: 25%; 
+                    max-height: 25%;
+            }
+                #website {
+                    position: absolute;
+                    top: 125px;
+                    right: 40px;
+                    width: 400px;
+                    height: 200px;
+                }
+                .github {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    top: 300px;
+
+                }
             </style>
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
               <script>
                $(document) .ready(function(){
                   $(".introcontainer").click(function(){
                       $(".introcontainer").animate({top: "-2000px"});
-                  });
-              });
-              $(document) .ready(function(){
-                  $(".experience").mouseenter(function(){
-                      $(".link");
                   });
               });
               </script>
@@ -224,48 +240,66 @@
                 </div></div>
             </div>
             <div id="top" class="navbar">
-                <a href="#top">Home</a>
+                <a href="#hedrick">Home</a>
                 <a href="#info">About</a>
                 <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
             </div>
             <img id="hedrick" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Los_Angeles%2C_Winter_2016.jpg">
             <div id="home" class="experience"><p>My <a id="summer" href="https://www.summerdiscovery.com/">Summer Discovery</a> in LA</p></div>
             <div id="info" class="about">
                 <div class="info">
                     <div class="image"></div>
-                    <div class="text"></div>
+                    <div class="text">
+                        <h1>
+                            About Me
+                        </h1>
+                        <br>
+                        <p2>My name is Oscar Lamas, and I came from Mexico City. I was born in Veracruz, Mexico and I'm going into 10th grade. I really enjoy playing video games and coding, and in the future I hope to pursue game design as a career. I came to Summer Discovery with a bit of computer programming experience. I took a semester long web design course, which taught me how to use HTML, CSS, and JavaScript. The final project was to create a website with all three elements. However, I didn't have any experience in Unity.</p2>
+                        <br>
+                        <div class="github">
+                            <a href="https://nclairesays.github.io/">https://nclairesays.github.io/</a>
+                        </div>
+                    </div>
                     <img id="pikachu" src="https://i.kym-cdn.com/photos/images/original/001/431/201/40f.png">
                 </div>
             </div>
-            <div class="blog"><h1>My Blog</h1>
+            <div id="blog" class="blog"><h1>My Blog</h1>
+                <img id="website" src="website2.png">
+                <div class="postback">
                 <div class="post">
                     <h3>
-                        Blog Post #1
-                        <span class="date">July 10th, 2019</span>
+                        Web Design in UCLA
+                        <span class="date">July 11th, 2019</span>
                     </h3>
                     <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, dolor quis interdum semper, nunc justo ultrices enim, ac auctor tellus libero et ligula. Nam placerat neque semper dolor sagittis hendrerit. Nulla imperdiet, augue nec venenatis vulputate, diam leo accumsan tortor, eget imperdiet ante odio eu elit. Ut euismod diam vel lacus accumsan, eu accumsan dolor molestie. Suspendisse in orci vel mi facilisis congue. Ut pulvinar commodo libero, et porttitor orci scelerisque vitae. In finibus aliquam risus at rutrum.
+                        <p2>I came to this computer programming course with some experience in web design. Although at first it was a bit slow because I had learned about a lot of this stuff previously, in the end it was really fun. In my school, the web design was really fun, and this was no exception. I personally really enjoy coding and learning new ways to make a website interesting. Overall, the class got a lot better when we switched from Glitch to Visual Studio Code, because then we started to actually code cool stuff.</p2>
+                    </div>
                     </div>
                 </div>
+                <div class="postback">
+                        <video autoplay muted loop id="myVideo">
+                                <source src="cube.mp4" type="video/mp4">
+                            </video>
                 <div class="post">
                     <h3>
-                        Blog Post #2
-                        <span class="date">July 10th, 2019</span>
+                        Unity in UCLA
+                        <span class="date">July 11th, 2019</span>
                     </h3>
                     <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, dolor quis interdum semper, nunc justo ultrices enim, ac auctor tellus libero et ligula. Nam placerat neque semper dolor sagittis hendrerit. Nulla imperdiet, augue nec venenatis vulputate, diam leo accumsan tortor, eget imperdiet ante odio eu elit. Ut euismod diam vel lacus accumsan, eu accumsan dolor molestie. Suspendisse in orci vel mi facilisis congue. Ut pulvinar commodo libero, et porttitor orci scelerisque vitae. In finibus aliquam risus at rutrum.
+                        <p2>Starting to get into Unity was probably one of the coolest things I've learned with computer programming. Since game design is something I want to pursue in the future, getting Unity was a really cool experience for me. I hadn't ever worked with Unity before, so it was fun to learn how it worked. I had heard about Unity being a very popular game engine alongside Unreal, but never thought to try it. Sadly, the course was very short, but I had a great time in the short classes because I learned a lot more about game design. </p2>
                     </div>
                 </div>
-                
+                </div>
+                <div class="postback">
                 <div class="post">
                     <h3>
-                        Blog Post #3
-                        <span class="date">July 10th, 2019</span>
+                        Experience at Summer Discovery
+                        <span class="date">July 11th, 2019</span>
                     </h3>
                     <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique, dolor quis interdum semper, nunc justo ultrices enim, ac auctor tellus libero et ligula. Nam placerat neque semper dolor sagittis hendrerit. Nulla imperdiet, augue nec venenatis vulputate, diam leo accumsan tortor, eget imperdiet ante odio eu elit. Ut euismod diam vel lacus accumsan, eu accumsan dolor molestie. Suspendisse in orci vel mi facilisis congue. Ut pulvinar commodo libero, et porttitor orci scelerisque vitae. In finibus aliquam risus at rutrum.
+                        <p2>I was really excited to come to Summer Discovery. Since going into high school, I've been thinking about what college I want to go to. It was important for me and my family that I start to get a little bit of college life experience. I wanted to go to a school that offered computer science or computer engineering. I chose UCLA, because I thought that it would be a really cool experience to go to LA for the first time while living in a college dorm. Overall the activities were really fun and the classes were great. The campus is really nice and the organization was handled very well.</p2>
                     </div>
+                </div>
                 </div>
             </div>
         </body>
